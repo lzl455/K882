@@ -24,28 +24,29 @@
 #define iKEY_INDEX_FN           (8*4 + 7)
 #define iKEY_DELAY_COUNT        2
 
-#define iKEY_FN_C               6
+// 以下按 matrixkey_scan() 搬位后的 matrix_status 取值, 与按键表(序号=列*8+行)一致
+#define iKEY_FN_C               4               // Fn (由[1]bit6搬到[4]bit7)
 #define iKEY_FN_R               0x80
 
-#define iKEY_BT0_C              12
+#define iKEY_BT0_C              10              // Fn表 iMODE_KEY_BT0
 #define iKEY_BT0_R              0x01
 
-#define iKEY_24G_C              15
+#define iKEY_24G_C              13              // Fn表 iMODE_KEY_24G
 #define iKEY_24G_R              0x01
 
 //-----------------------------------------------------------------------------;
 //配置常量定义区
 //
-#define iKEY_FCC_TX_C           18               // 右 切换定频收发
+#define iKEY_FCC_TX_C           3                // 右 切换定频收发
 #define iKEY_FCC_TX_R           0x80
 
-#define iKEY_FCC_FREQ_C         18               // 左 进入跳频
+#define iKEY_FCC_FREQ_C         3                // 左 进入跳频
 #define iKEY_FCC_FREQ_R         0x08
 
-#define iKEY_FCC_WAVE_C         18               // 上 切换空载波
+#define iKEY_FCC_WAVE_C         3                // 上 切换空载波
 #define iKEY_FCC_WAVE_R         0x04
 
-#define iKEY_SWTICH_FREQ_C      18               // 下 切换频点
+#define iKEY_SWTICH_FREQ_C      3                // 下 切换频点
 #define iKEY_SWTICH_FREQ_R      0x10
 
 //-----------------------------------------------------------------------------;
